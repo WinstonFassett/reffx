@@ -13,12 +13,12 @@
   },
   "scripts": {
     "clean": "rm -rf lib",
-    "prepare": "yarn clean && ttsc",
+    "build": "yarn clean && tsc",
     "watch": "tsc --watch --noEmit",
     "test": "yarn test:unit:clean && yarn test:unit",
     "test:unit": "jest",
     "test:unit:clean": "jest --clearCache",
-    "release": "yarn prepare && release-it",
+    "release": "yarn build && release-it",
     "tidy": "./bin/tidy.sh"
   },
   "license": "MIT",
