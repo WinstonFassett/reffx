@@ -7,8 +7,8 @@ module.exports = {
     },
   },
   preset: "ts-jest",
-  testMatch: ["<rootDir>/src/test/**/*.test.ts"],
+  testMatch: ["<rootDir>/test/**/*.test.ts"],
   moduleNameMapper: {
-    "^@lib": "<rootDir>/src/lib",
+    "^@lib": "<rootDir>/src",
   },
 };

@@ -12,7 +12,7 @@
     "url": "https://github.com/soul-codes/reffx"
   },
   "scripts": {
-    "clean": "rm -rf lib",
+    "clean": "rm -rf dist",
     "build": "yarn clean && tsc",
     "watch": "tsc --watch --noEmit",
     "test": "yarn test:unit:clean && yarn test:unit",
@@ -22,8 +22,8 @@
     "tidy": "./bin/tidy.sh"
   },
   "license": "MIT",
-  "main": "lib",
-  "types": "lib",
+  "main": "dist",
+  "types": "dist",
   "devDependencies": {
     "@release-it/conventional-changelog": "^1.1.0",
     "@types/jest": "26",
